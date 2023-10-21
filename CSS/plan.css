@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contanier {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: black;
+    width: 250px;
+    height: 500px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.title {
+    width: 100%;
+    height: 30%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cards .card:first-child .title {
+    background-color: #54e775;
+}
+
+.cards .card:nth-child(2) .title {
+    background-color: #529cdd;
+}
+
+.cards .card:last-child .title {
+    background-color: #f42d44;
+}
+
+.cards .card:first-child button {
+    background-color: #54e775;
+}
+
+.cards .card:nth-child(2) button {
+    background-color: #529cdd;
+}
+
+.cards .card:last-child button {
+    background-color: #f42d44;
+}
+
+.icon {
+    height: 10%;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+ul li {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1E3050;
+    border: 1px solid;
+    border-color: black transparent black transparent;
+    margin-bottom: 15px;
+    padding: 0 5px;
+
+}
+
+h3 {
+    font-size: 25px;
+    color: #1E3050;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 75px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.bar {
+    width: 100%;
+    height: 20px;
+    background-color: #529cdd;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media(min-width:805px) {
+    section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
